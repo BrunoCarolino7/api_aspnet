@@ -13,8 +13,8 @@
   <br>
   <div align="justify">
       <h3>Considerações:</h3>
-      <p>Fazer este Teste Prático para Ploomes foi um tanto desafiador para mim, porque precisei aprender coisas que até então não sabia. Os fundamentos para criar toda essa aplicação eu já tinha visto, mas desenvolver uma aplicação completa desta foi um tanto difícil, pois além de escrever todo o código de forma limpa e organizada, também precisei conectar com o banco de dados, além de documentar certinho (ou tentar) a API.</p>
+      <p>Fazer este Teste Prático para Ploomes foi um tanto desafiador para mim, porque precisei aprender coisas que até então não sabia. Os fundamentos para criar toda essa aplicação eu já tinha visto, mas desenvolver uma aplicação completa desta foi um tanto difícil, pois além de escrever todo o código de forma limpa e organizada, também precisei conectar com o banco de dados, além de tentar documentar a API.</p>
       <p>Gostaria sim de ter feito algo mais diferenciado, algo ímpar, mas como disse precisei preencher algumas lacunas com conteúdos para tentar terminar ou chegar mais próximo possível dos requisitos exigidos pela empresa.</p>
-      <p>Os desafios chegam para somar e, não para te derrubar. Aprendi muito com este teste e foi de fato um divisor de águas em C# para minha carreira. É daqui pra Sênior agora. :)</p>
+      <p>Os desafios chegam para somar e, não para te derrubar, fazer você desistir do caminho. Assim eu vou caminhando, contruindo o Dev que desejo ser. :)</p>
   </div>
 </div>
