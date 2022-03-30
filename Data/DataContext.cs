@@ -9,7 +9,7 @@ namespace api.Data
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {}
 
-        public DbSet<Pessoa> pessoa { get; set; }
+        public DbSet<Pessoa> pessoa { get; set; } //CRUD
 
     }
 }

@@ -1,6 +1,6 @@
-using System.Threading.Tasks;
-using api.Data;
-using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks; // programção assíncrona 
+using api.Data; // CRUD selecionar , altrerar , deletar e cadastrar
+using Microsoft.AspNetCore.Mvc; // criação das rotas 
 using Microsoft.EntityFrameworkCore;
 using api.Models;
 
@@ -15,12 +15,13 @@ namespace api.Controllers
         // Construtor
         public PessoaController(DataContext context)
         {
-            this.dc = context;
+            this.dc = context; //pegando a pasta data o DataContext.cs
         }
         
         // Post
         [HttpPost("api")]
-        public async Task<ActionResult> cadastrar([FromBody] Pessoa p)
+        public async Task<ActionResult> cadastrar([FromBody] Pessoa p) // //aasíncrono, realizar tarefas aguardando ordens
+        
         {
             dc.pessoa.Add(p);
             await dc.SaveChangesAsync();
@@ -28,7 +29,7 @@ namespace api.Controllers
         }
         
         // Get
-        [HttpGet("api")]
+        [HttpGet("api")]  //mesmo parãmetro do post, o que muda é o tipo de requisição :) Post/Get
         public async Task<ActionResult> listar()
         {
             var dados = await dc.pessoa.ToListAsync();
@@ -36,7 +37,7 @@ namespace api.Controllers
         }
 
         // Get (id)
-        [HttpGet("api/{codigo}")]
+        [HttpGet("api/{codigo}")]  // filtar informações pelo ID, buscar determinado objeto
         public Pessoa filtrar(int codigo)
         {
             Pessoa p = dc.pessoa.Find(codigo);
@@ -47,7 +48,7 @@ namespace api.Controllers
         [HttpPut("api")]
         public async Task<ActionResult> editar([FromBody] Pessoa p)
         {
-            dc.pessoa.Update(p);
+            dc.pessoa.Update(p); // o "p" é o objeto vindo de frombody (front end)
             await dc.SaveChangesAsync();
             return Ok(p);
         }
@@ -69,7 +70,7 @@ namespace api.Controllers
         }
 
         // Teste
-        [HttpGet("oi")]
+        [HttpGet("oi")] //get é usado para exibir textos, listar etc...
         public string oi()
         {
             return "Hello World";
