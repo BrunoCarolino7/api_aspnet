@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/BrunoCarolino7/api_aspnet/net.jpg" width="30%">
+  <img src="https://github.com/BrunoCarolino7/api_aspnet/blob/main/net.jpg" width="30%">
   <h1 style="border-bottom:none">API - ASP.NET Core 5 e MySQL</h1>
   <p>Dev: Bruno Carolino Lopes</p>
   
